@@ -1,0 +1,51 @@
+#intro {
+  height: calc(100vh - 6rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+}
+
+.introContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.introText {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 840px) {
+  .bg {
+    width: 15rem;
+  }
+
+  .hello {
+    font-size: 2rem;
+  }
+
+  .introText {
+    font-size: 1.5rem;
+  }
+}
