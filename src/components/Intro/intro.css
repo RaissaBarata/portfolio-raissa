@@ -29,11 +29,26 @@
   margin-top: 1rem;
   font-size: 3rem;
   font-weight: 700;
-  color: blueviolet;
+  color: rgb(135, 31, 233);
 }
 
 .introText {
   font-size: 2rem;
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-around; /* Distribui os ícones igualmente */
+  margin-top: 20px; /* Adiciona um espaçamento acima dos ícones */
+}
+
+.socialIcons a {
+  color: rgb(135, 31, 233); /* Define a cor roxa para todos os ícones */
+  font-size: 24px; /* Define o tamanho dos ícones */
+  margin: 0 10px; /* Adiciona espaçamento horizontal entre os ícones */
+}
+
+.socialIcons a:hover {
+  color: rgb(160, 83, 231); /* Define a cor roxa mais escura no hover */
 }
 
 @media screen and (max-width: 840px) {
