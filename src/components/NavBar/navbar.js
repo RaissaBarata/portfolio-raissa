@@ -10,8 +10,8 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className="logo" />
       <div className="desktopMenu">
         <Link className="desktopMenuListItem">Início</Link>
-        <Link className="desktopMenuListItem">Projetos</Link>
         <Link className="desktopMenuListItem">Sobre Mim</Link>
+        <Link className="desktopMenuListItem">Projetos</Link>
       </div>
       <a href="/contact">
         <img src={contactImg} alt="" className="desktopMenuImg" />
