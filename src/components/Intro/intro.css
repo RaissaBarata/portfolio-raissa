@@ -48,7 +48,7 @@
 }
 
 .socialIcons a:hover {
-  color: rgb(160, 83, 231); /* Define a cor roxa mais escura no hover */
+  color: rgb(160, 83, 231);
 }
 
 @media screen and (max-width: 840px) {

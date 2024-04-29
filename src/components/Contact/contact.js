@@ -17,9 +17,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário
+
     console.log(formData);
-    // Limpar o formulário após o envio
+
     setFormData({
       name: "",
       email: "",
@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div id="contact" className="contact-form">
       <h2>Entre em Contato</h2>
       <p>Entre em contato comigo e compartilhe um pouco sobre sua ideia.</p>
       <form onSubmit={handleSubmit}>
