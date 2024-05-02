@@ -8,7 +8,9 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  z-index: 1;
 }
+
 
 .skillTitle {
   font-size: 3rem;

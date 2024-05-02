@@ -1,4 +1,6 @@
+
 import React from "react";
+import ParticlesComponent from "./ParticlesComponent";
 import "./intro.css";
 import bg from "../../assets/fotoperfil.png";
 import { FaLinkedin, FaInstagram, FaBehance, FaGithub } from "react-icons/fa";
@@ -7,6 +9,7 @@ const Intro = () => {
   return (
     <section id="intro">
       <div className="introContent">
+        <ParticlesComponent id="particles" />
         <img src={bg} alt="profile" className="bg" />
         <span className="hello">Raíssa Barata</span> <br></br>
         <span className="introText">UX/UI Designer</span>
