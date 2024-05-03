@@ -98,7 +98,7 @@ const ParticlesComponent = (props) => {
     }),
     []
   );
-
+  console.log(init);
   return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
