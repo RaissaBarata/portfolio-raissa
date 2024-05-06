@@ -33,7 +33,7 @@ const Navbar = () => {
           activeClass="active"
           to="skills"
           spy={true}
-          offset={-50}
+          offset={-100}
           duration={500}
           className="desktopMenuListItem"
         >
@@ -43,7 +43,7 @@ const Navbar = () => {
           activeClass="active"
           to="works"
           spy={true}
-          offset={-100}
+          offset={-50}
           duration={500}
           className="desktopMenuListItem"
         >

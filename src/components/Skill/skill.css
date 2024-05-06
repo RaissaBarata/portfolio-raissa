@@ -11,7 +11,6 @@
   z-index: 1;
 }
 
-
 .skillTitle {
   font-size: 3rem;
   font-weight: 600;
@@ -65,6 +64,22 @@
   padding-top: 10px;
 }
 
+.seeMoreButton {
+  background-color: rgb(135, 31, 233);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seeMoreButton:hover {
+  background-color: rgb(160, 83, 231);
+}
+
 @media screen and (max-width: 720px) {
   .skillBarText > p {
     font-size: 1rem;
@@ -83,5 +98,10 @@
 
   .skillBarText > h2 {
     font-size: 5vw;
+  }
+
+  .skillDesc {
+    font-weight: 200;
+    font-size: 1.1rem;
   }
 }

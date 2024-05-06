@@ -25,7 +25,7 @@ const works = () => {
   const projects = [
     {
       title: "Unique Studio",
-      transcription: "Descrição do projeto Unique Studio",
+      transcription: "Site para salão de beleza Unique Studio",
       link: "https://unique-studio.netlify.app",
       image: Portfolio01,
     },

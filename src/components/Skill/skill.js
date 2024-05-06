@@ -7,7 +7,7 @@ import FrontEnd from "../../assets/frontend.png";
 const skill = () => {
   return (
     <section id="skills">
-      <span className="skillTitle">O que eu faço?</span>
+      <span className="skillTitle">Sobre Mim</span>
       <span className="skillDesc">
         {" "}
         Olá! Me chamo Raíssa, sou estudante de Análise e Desenvolvimento de
@@ -16,7 +16,7 @@ const skill = () => {
         intuitivas e atraentes, garantindo que cada usuário tenha uma
         experiência digital memorável. Se você está em busca de um desenvolvedor
         web apaixonado por criar soluções digitais eficazes, adoraria trabalhar
-        com você! Vamos transformar suas ideias em realidade digital!
+        com você!
       </span>
       <div className="skillBars">
         <div className="skillBar">
@@ -61,6 +61,9 @@ const skill = () => {
           </div>
         </div>
       </div>
+      <a href="#" className="seeMoreButton">
+        Veja Mais
+      </a>
     </section>
   );
 };
