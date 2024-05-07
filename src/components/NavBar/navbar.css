@@ -1,5 +1,5 @@
 .navbar {
-  background: black;
+  background: rgb(0, 0, 0);
   height: 5rem;
   width: 95vw;
   margin: 0 auto;
@@ -114,6 +114,7 @@
 @media screen and (max-width: 720px) {
   .navbar {
     width: 90vw;
+    background: rgba(0, 0, 0, 0.055);
   }
   .mobMenu {
     display: flex;
