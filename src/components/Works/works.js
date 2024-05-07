@@ -6,22 +6,26 @@ import Portfolio03 from "../../assets/projeto03.png";
 import Portfolio04 from "../../assets/projeto04.png";
 import Portfolio05 from "../../assets/projeto05.png";
 import Portfolio06 from "../../assets/projeto06.png";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.compat.css";
 
 const Card = ({ title, transcription, link, image }) => {
   return (
-    <div className="card">
-      <a href={link}>
-        <img src={image} alt={title} className="cardImg" />
-      </a>
-      <div className="cardInfo">
-        <h3 className="cardTitle">{title}</h3>
-        <p className="cardTranscription">{transcription}</p>
+    <ScrollAnimation animateIn="zoomIn">
+      <div className="card">
+        <a href={link}>
+          <img src={image} alt={title} className="cardImg" />
+        </a>
+        <div className="cardInfo">
+          <h3 className="cardTitle">{title}</h3>
+          <p className="cardTranscription">{transcription}</p>
+        </div>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 };
 
-const works = () => {
+const Works = () => {
   const projects = [
     {
       title: "Unique Studio",
@@ -75,4 +79,4 @@ const works = () => {
   );
 };
 
-export default works;
+export default Works;

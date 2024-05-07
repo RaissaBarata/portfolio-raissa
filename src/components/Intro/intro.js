@@ -1,4 +1,3 @@
-
 import React from "react";
 import ParticlesComponent from "./ParticlesComponent";
 import "./intro.css";

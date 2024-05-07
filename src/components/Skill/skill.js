@@ -61,8 +61,8 @@ const skill = () => {
           </div>
         </div>
       </div>
-      <a href="#" className="seeMoreButton">
-        Veja Mais
+      <a href="/curriculoraissa.pdf" download className="seeMoreButton">
+        Baixe meu currículo aqui
       </a>
     </section>
   );
