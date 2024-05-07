@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./contact.css"; // Importe seu arquivo de estilos CSS
+import "./contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -15,22 +18,43 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    try {
+      const response = await emailjs.sendForm(
+        "service_0t17y6y",
+        "template_bffyqjc",
+        e.target,
+        "cO7hl82WGKXZ6vtZ_"
+      );
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+      console.log("Email enviado com sucesso", response);
+
+      // Limpar os campos após o envio bem-sucedido
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      // Exibir mensagem de sucesso
+      setShowSuccessMessage(true);
+    } catch (error) {
+      console.error("Erro ao enviar email", error);
+      // Exibir mensagem de erro para o usuário
+    }
   };
 
   return (
     <div id="contact" className="contact-form">
       <h2>Entre em Contato</h2>
       <p>Entre em contato comigo e compartilhe um pouco sobre sua ideia.</p>
+      {showSuccessMessage && (
+        <p className="success-message">
+          Obrigado por entrar em contato! Retornarei em breve.
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Nome:</label>
         <input
