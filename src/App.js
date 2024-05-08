@@ -3,6 +3,7 @@ import Intro from "./components/Intro/intro";
 import Skill from "./components/Skill/skill";
 import Works from "./components/Works/works";
 import Contact from "./components/Contact/contact";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Skill />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }
