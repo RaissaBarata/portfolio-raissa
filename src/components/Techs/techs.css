@@ -1,0 +1,24 @@
+.tech {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./skill.css";
 import UIDesign from "../../assets/uxlogo.svg";
-import WebDesign from "../../assets/webdesignicon.png";
 import FrontEnd from "../../assets/frontend.png";
 
 const skill = () => {
@@ -29,20 +28,6 @@ const skill = () => {
               os comportamentos dos usuários para projetar produtos que atendam
               às suas expectativas e proporcionem uma experiência de alta
               qualidade.
-            </p>
-          </div>
-        </div>
-
-        <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBaring"></img>
-          <div className="skillBarText">
-            <h2>Web Design</h2>
-            <p>
-              Como web designer, minha principal responsabilidade é criar
-              designs visuais atraentes e funcionais para websites e aplicativos
-              da web. Isso inclui a criação de layouts, seleção de cores,
-              tipografia e elementos visuais para garantir uma experiência de
-              usuário envolvente.
             </p>
           </div>
         </div>
