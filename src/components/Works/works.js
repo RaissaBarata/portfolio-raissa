@@ -3,9 +3,9 @@ import "./works.css";
 import Portfolio01 from "../../assets/projeto01.png";
 import Portfolio02 from "../../assets/projeto02.png";
 import Portfolio03 from "../../assets/projeto03.png";
-import Portfolio04 from "../../assets/projeto04.png";
 import Portfolio05 from "../../assets/projeto05.png";
 import Portfolio06 from "../../assets/projeto06.png";
+import Portfolio07 from "../../assets/projeto07.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 
@@ -28,6 +28,12 @@ const Card = ({ title, transcription, link, image }) => {
 const Works = () => {
   const projects = [
     {
+      title: "Qrates",
+      transcription: "Site para a plataforma Qrates",
+      link: "https://qratesrecords.vercel.app/",
+      image: Portfolio07,
+    },
+    {
       title: "Unique Studio",
       transcription: "Site para salão de beleza Unique Studio",
       link: "https://unique-studio.netlify.app",
@@ -45,13 +51,7 @@ const Works = () => {
       link: "https://agenciasunnyside.netlify.app",
       image: Portfolio03,
     },
-    {
-      title: "Seaweed Cosmetics",
-      transcription:
-        "Site criado para a marca de produtos de beleza Seaweed Cosmetics (em construção).",
-      link: "https://seaweed-cosmetics.netlify.app",
-      image: Portfolio04,
-    },
+
     {
       title: "Verdelic",
       transcription: "Projeto desenvolvido para a marca de produtos matcha.",
