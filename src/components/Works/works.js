@@ -6,6 +6,7 @@ import Portfolio03 from "../../assets/projeto03.png";
 import Portfolio05 from "../../assets/projeto05.png";
 import Portfolio06 from "../../assets/projeto06.png";
 import Portfolio07 from "../../assets/projeto07.png";
+import Portfolio08 from "../../assets/projeto08.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 
@@ -27,6 +28,12 @@ const Card = ({ title, transcription, link, image }) => {
 
 const Works = () => {
   const projects = [
+    {
+      title: "Idiomus Connect",
+      transcription: "Site para a plataforma Idiomus",
+      link: "https://idiomus-connect-1hbv.vercel.app/",
+      image: Portfolio08,
+    },
     {
       title: "Qrates",
       transcription: "Site para a plataforma Qrates",
@@ -52,12 +59,6 @@ const Works = () => {
       image: Portfolio03,
     },
 
-    {
-      title: "Verdelic",
-      transcription: "Projeto desenvolvido para a marca de produtos matcha.",
-      link: "https://www.behance.net/gallery/190345593/Verdelic-UXUI-DESIGN",
-      image: Portfolio05,
-    },
     {
       title: "PSIU",
       transcription:
